@@ -1,0 +1,457 @@
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("../fonts/bootstrap-icons.woff"),url("../fonts/bootstrap-icons.woff2");
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+    font-family: "Work sans",sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    box-sizing: content-box;
+}
+header{
+    /* padding: 0 40px; */
+    position: relative;
+    overflow: hidden;
+}
+header nav{
+    background-color: transparent;
+    position:sticky;
+    top: 10px;
+    height: 80px;
+    padding: 10px 0px;
+    width: 100%;
+}
+.menu{
+    float: right;
+    position: relative;
+    /* overflow-x: hidden; */
+    margin-right: 50px;
+    margin-top: 15px;
+}
+.hamberger{
+    /* padding: 10px; */
+    width: fit-content;
+}
+.hamberger span{
+    display: block;
+    height: 2.5px;
+    width: 25px;
+    background-color: #2C4755;
+    margin-bottom:7px ;
+}
+.hamberger span:nth-child(2){
+    margin-left: 7px;
+    width: 17px;
+
+}
+.top{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #637988;
+    font-size: 1.2em;
+}
+nav ul{
+    padding-left: 15px;
+    position: absolute;
+    list-style: none;
+    top: -50px;
+    left: -460px;
+    background-color: #35505D;
+    opacity: 0.9;
+    height: 100vh;
+    transform: translate(100%);
+    transition: all 0.5s ease-in;
+}
+nav .hamberger:hover+ul{
+    transform: translate(0);
+
+}
+nav ul li{
+    display: block;
+    padding:5px 10px;
+    width: 500px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 2em
+} 
+nav img{
+    margin:15px 70px;
+}
+header .home h2{
+    padding-top: 50px;
+    font-size: 4.2em;
+    text-align: center;
+    color: #10CAB7;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+header .home h2 p{
+    font-size:15px;
+    line-height: 2;
+    font-weight: 200;
+    color: #6E6E6E;
+    margin-bottom: 0;
+}
+header .back{
+    width:100%;
+    height: 300px;
+    background-image: url(../image/mountain.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.first .box{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    cursor: pointer;
+}
+.first .box i{
+    font-size: 4em;
+    color: #10CAB7;
+}
+.first .box i::before,
+.first .box i
+{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.box h3{
+    color:#2C4755;
+    letter-spacing: -0.5px;
+    font-weight: 900;
+}
+.box p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #2C4755;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+
+.Service{
+    padding: 60px;
+    height:800px;
+    margin: 10px 0 70px 0;
+}
+.titre{
+    position: relative;
+    text-align: center;
+    color: #F6F6F6;
+    font-size: 110px;
+    font-weight: 800;
+    letter-spacing: -0.3rem;
+    margin-top: 0px;
+}
+.titre::after{
+    content: "Don't be busy, be productive";
+    color: #576C77;
+    font-size: 23px;
+    letter-spacing: initial;
+    position: absolute;
+    bottom: 10px;
+    left: 433px;
+    font-weight: 400;
+}
+
+.Service .left{
+    float: left;
+    width: 60%;
+    margin-top: 50px;
+}
+.Service .left .card{
+    display: inline-block;
+    width: 45%;
+}
+.margin{
+    margin-left: 40px;
+}
+
+.Service .card{
+    position: relative;
+    height: 185px;
+}
+.Service .left .card div{
+    display: inline-block;
+}
+.card .icon{
+    width: 20%;
+    margin-right: 20px;
+}
+.card .icon i{
+    position: absolute;
+    top: 25px;
+    font-size: 2.5em;
+    color: #10CAB7;
+}
+.card .card-info{
+    position: absolute;
+    top :0;
+    width: 70%;
+}
+.card .card-info h4{
+    color: #2C4755;
+    font-size: 18px;
+    font-weight: 800;
+}
+.card .card-info p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #576C77;
+    line-height: 1.5;
+}
+.Service .right{
+    position: relative;
+    float: right;
+    margin-top: 50px;
+}
+.Service .right::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 380px;
+    background-color: #2C4755;
+    right: -10px;
+    top: -50px;
+    z-index: -20;
+
+}
+.Service .right img{
+    width: 250px;
+    height: 275px;
+    margin-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+
+
+.Portfolio{
+    background-color: #F6F6F6;
+    padding: 60px;
+    /* text-align: center; */
+}
+.Portfolio .titre{
+    color: #EBECED;
+}
+.Portfolio .titre::after{
+    content: "If you do it right, it will last forever";
+    left:400px ;
+}
+
+.Portfolio .cont{
+    display: inline-block;
+    width: 31.3%;
+    background-color: #ffffff;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;   */
+    box-shadow: 0px 4px 12px 0px rgba(36,39,46,0.1);
+
+}
+.Portfolio .cont .cont-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.Portfolio .cont .cont-img img{
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+.Portfolio .cont .cont-img:hover img{
+    transform: scale(1.2);
+}
+.Portfolio .cont:nth-child(3){
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.Portfolio .cont .cont-info{
+    padding: 0 30px;
+}
+.Portfolio .cont .cont-info h4{
+    color: #2C4755;
+    font-size: 18px;
+    font-weight: 900;
+}
+.Portfolio .cont .cont-info p{
+    color: #576C77;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+.Portfolio .button{
+    margin-top: 80px;
+    text-align: center;
+}
+.Portfolio a{
+    background-color: #FAFAFA;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-top: 1.5px solid #2C4755;
+    border-left: 1.5px solid #2C4755;
+    border-right: 1px solid #2C4755;
+    border-bottom: 1px solid #2C4755;
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	border-radius: 2px;
+	font-weight: 800;
+    color: rgba(44, 71, 85, 1);
+	box-shadow: rgba(44, 71, 85, 0.9) 0 0px 0px 1px inset;
+}
+.Portfolio a:hover{
+    color: #10CAB7;
+	box-shadow: rgba(44, 71, 85, 1) 0 80px 0px 1px inset;
+}
+
+
+.About{
+    padding:60px;
+    padding-bottom: 100px;
+}
+.About h3::after{
+    content:"Less is more work";
+    left: 490px;
+}
+.About>div{
+    display: inline-block;
+}
+.About .About-left{
+    margin-left: 30px;
+    float: left;
+    width: 40%;
+    position: relative;
+}
+.About .About-left::after{
+    content: "";
+    width: 110px;
+    height: 300px;
+    background-color: #10CAB7;
+    position: absolute;
+    top: -25px;
+    right: 120px;
+    z-index: -5;
+}
+.About .About-left::before{
+    content: "";
+    width: 100px;
+    height: 400px;
+    background-color: #EBECED;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -3;
+}
+.About .About-right{
+    width: 50%;
+}
+.About img{
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;}
+.About .image{
+    position: relative;
+}
+.About .image::after{
+    content: "";
+    width: 200px;
+    height: 80px;
+    background-color: #10CAB7;
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    z-index: -5;
+}
+.About .About-right {
+    margin-left: 60px;
+    padding-bottom: 40px ;
+}
+.About .About-right p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #6E6E6E;
+    line-height: 1.5
+}
+.About .About-right h5{
+    font-size: 18px;
+    font-weight: 900;
+    color: #2C4755;
+    line-height: 1.5;
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.About .About-right h5::after{
+    content: "";
+    width: 220px;
+    height: 2px;
+    background-color: #10CAB7;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+.Contact{
+    padding: 60px;
+    background-color: #FAFAFA;
+    clear: both;
+}
+.Contact .titre{
+    margin-top: 50px;
+    color: #EBECED;
+    margin-bottom: 60px;
+}
+.Contact .titre::after{
+    content: "I was born to create";
+    right: 400px;
+    letter-spacing: 2px;
+}
+.Contact span{
+    color: #2C4755;
+    font-size: 2.8em;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+.Contact span p{
+    margin-top: 7px;
+    font-size: 0.8em;
+    font-weight: 900;
+    color: #10CAB7;
+    text-indent: 20px;
+    letter-spacing: -1px;
+}
+.Contact p{
+    font-size: 15px;
+    font-weight: 100;
+    color: #637988;
+    text-indent: 10px;
+}
+.Contact p span i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+footer{
+    text-align: center;
+    background-color: #2C4755;
+    height: 80px;
+}
+footer p{
+    padding-top:30px ;
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+footer p span{
+    color: #10CAB7;
+}
